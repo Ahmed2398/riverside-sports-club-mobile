@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "Riverside Sports Club",
-    "slug": "riverside-member-app",
+    "slug": "riverside-sports-club",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -19,12 +19,17 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#2B5AA7"
       },
-      "package": "com.riverside.memberapp"
+      "package": "com.riverside.memberapp",
+      "permissions": [
+        "android.permission.USE_BIOMETRIC",
+        "android.permission.USE_FINGERPRINT"
+      ]
     },
     "plugins": [
       "expo-router",
       "expo-secure-store",
-      "expo-local-authentication"
+      "expo-local-authentication",
+      "expo-status-bar"
     ],
     "experiments": {
       "typedRoutes": false
@@ -33,7 +38,11 @@
       "apiBaseUrl": "http://10.0.2.2:4000",
       "router": {
         "origin": false
+      },
+      "eas": {
+        "projectId": "d558176b-11e3-4bf2-b055-e28f73a3144b"
       }
-    }
+    },
+    "owner": "ahmedashraf2398"
   }
 }
